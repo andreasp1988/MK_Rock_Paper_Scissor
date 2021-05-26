@@ -1,0 +1,132 @@
+@font-face {
+    font-family:'mk';
+    src: url(../fonts/mkmyth.ttf);
+}
+@font-face {
+    font-family: 'mk2';
+    src: url(../fonts/mk1.ttf);
+}
+* {
+    overflow: hidden
+}
+body {
+    min-height: 90vh;
+    background: url(../img/mortal-kombat-x-smertelnaya.jpeg) center / cover no-repeat;
+    background-size: 100%;
+    margin: 0;
+}
+
+.scorpion img {
+    width: 30%;
+}
+.scorpion img:nth-of-type(2) {
+    width: 30%;
+    margin-right: 70%;
+}
+.start  {
+    color:#73031a;
+    font-family: 'mk';
+    font-size: 2rem;
+    margin: 0% auto;
+    text-align: center;
+}
+.boss_fight  {
+    margin: 20% auto;
+    text-align: center;
+}
+.boss_fight a {
+   color:#73031a;
+   font-family: 'mk2';
+   font-size: 4rem;
+   text-decoration: none;
+
+}
+
+.boss_fight a {
+    animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color:#73031a;    }
+    49%{    color: #73031a; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #73031a;    }
+}
+
+/* FIGHT ARENA */
+.fight {
+    display: flex;
+    justify-content: center;
+    margin:5% 0;
+}
+.fight button {
+   background: lightgray;
+   border: 2px solid black;
+    font-size: 2rem;
+    box-sizing: border-box;
+    background: grey;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+#x button{
+    color: #6885f7;
+    font-size: 3rem;
+}
+#circle button span {
+    border: 4px solid red;
+    border-radius: 50%;
+    padding: 0px 18px; 
+}
+
+#square button span {
+    border:4px solid #ff87ef;
+    padding: 0px 18px; 
+}
+.arena h1{
+    color:#73031a;
+    font-family: 'mk';
+    font-size: 2rem;
+}
+.frame {
+    border: 3px solid #73031a;
+    height: 70vh;
+    width: 120vh;
+    margin: 2% auto 0;
+    position: relative;
+    
+}
+.score  {
+    color: #73031a;
+    font-family: 'mk';
+    font-size: 6rem;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.scorpion img {
+    width: 45vh;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+#comp {
+    margin: 0;
+    font-size: 2rem;
+    position: absolute;
+    top: 13%;
+    left: 14%;
+    color: #73031a;
+    font-family: 'mk';
+}
+#player1 {
+    margin: 0;
+    display: flex;
+    position: absolute;
+    right: 18%;
+    top: 13%;
+    font-size: 2rem;
+    color: #73031a;
+    font-family: 'mk';
+}
